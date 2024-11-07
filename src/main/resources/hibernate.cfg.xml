@@ -9,7 +9,7 @@ https://github.com/hibernate/dtd/blob/main/hibernate-configuration-3.0.dtd
 <hibernate-configuration>
     <session-factory>
 
-        <property name="connection.url">jdbc:mysql://localhost:3306/prueba1</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/examen</property>
         <property name="connection.username">root</property>
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="connection.password">pwd</property>
@@ -18,8 +18,8 @@ https://github.com/hibernate/dtd/blob/main/hibernate-configuration-3.0.dtd
         <property name="show_sql">true</property>
         <property name="hibernate.transaction.jta.platform">org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform</property>
 
-       <mapping class="org.example.model.Constelacion"/>
-        <mapping class="org.example.model.Estrella"/>
+       <mapping class="org.example.model.Pelicula"/>
+        <mapping class="org.example.model.Opinion"/>
 
     </session-factory>
 </hibernate-configuration>
