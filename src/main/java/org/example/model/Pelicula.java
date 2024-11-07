@@ -7,6 +7,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+// Esta clase representa una entidad de la base de datos que almacena información sobre una película.
 @Data
 @Entity
 @Table(name = "pelicula")

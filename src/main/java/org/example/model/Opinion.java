@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.io.Serializable;
-
+//Esta clase representa una entidad de la base de datos que almacena información sobre una opinión.
 @Data
 @Entity
 @Table(name = "opinion")

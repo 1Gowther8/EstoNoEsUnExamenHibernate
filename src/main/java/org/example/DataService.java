@@ -15,15 +15,15 @@ public class DataService implements Serializable {
 
 
 
-
+//Historia de usuario 1
     public void save(Pelicula pelicula) {
         try (var session = sessionFactory.openSession()) {
             session.beginTransaction();
-            session.save(pelicula);
+            session.persist(pelicula);
             session.getTransaction().commit();
         }
     }
-
+    //Historia de usuario 2
  public List<Opinion> obtenerOpinion(String email) {
     try (var session = sessionFactory.openSession()) {
         return session.createQuery("FROM Opinion WHERE usuario = :email", Opinion.class)
@@ -32,18 +32,18 @@ public class DataService implements Serializable {
     }
 }
 
-
+//historia de usuario 3
 public void añadirOpinion(Pelicula pelicula, Opinion opinion) {
     try (var session = sessionFactory.openSession()) {
         session.beginTransaction();
         pelicula.añadirOpinion(opinion);
-        session.saveOrUpdate(pelicula);
-        session.save(opinion);
+        session.persist(pelicula);
+        session.persist(opinion);
         session.getTransaction().commit();
     }
 }
 
-
+//historia de usuario 4
 public void imprimirPeliculasConOpinionesBajas() {
     try (var session = sessionFactory.openSession()) {
         List<Pelicula> peliculas = session.createQuery(

@@ -13,18 +13,18 @@ public class Main {
 
 
 
-        /*Historia 1
+        /*Historia 1 añadir pelicula
         Pelicula p1 = new Pelicula("Segunda Añadida");
         dataService.save(p1);*/
 
-        /*Historia 2
+        /*Historia 2 obtener opinion de una pelicula
         System.out.println(dataService.obtenerOpinion("user1@example.com"));*/
 
-        /*Historia 3
+        /*Historia 3 añadir opinion a una pelicula
         Opinion op1=new Opinion("Nueva descripcion añadida","correonuevo@gmail.com",5);
         dataService.añadirOpinion(p4, op1);*/
 
-        /*Historia 4
+        /*Historia 4 imprimir peliculas con opiniones menores a 3
         dataService.imprimirPeliculasConOpinionesBajas();*/
 
 
